@@ -31,8 +31,5 @@ bool firstTime = true;
 	else {
 		%orig;
 	}
-	}
-
-
-
+}
 %end

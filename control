@@ -1,0 +1,9 @@
+Package: com.vinofou.custommessage
+Name: CustomMessage
+Depends: mobilesubstrate
+Version: 0.1.0
+Architecture: iphoneos-arm
+Description: Tweak that shows an alert on SpringBoard!
+Maintainer: Vincent Fournier <vinofou@hotmail.ca>
+Author: Vincent Fournier <vinofou@hotmail.ca>
+Section: Tweaks

@@ -3,13 +3,10 @@
 
 bool firstTime = true;
 
-@interface SBHomeScreenViewController : UIViewController
-@end
+%hook SpringBoard
 
-%hook SBHomeScreenViewController
-
--(void)viewWillLayoutSubviews {
-	if (firstTime) {
+-(void)applicationDidFinishLaunching:(id)application {
+	//if (firstTime) {
 		%orig;
 		UIAlertController *alert = [UIAlertController
 	    alertControllerWithTitle:@"some title"
@@ -27,9 +24,9 @@ bool firstTime = true;
 		[alert addAction:okAction];
 		[self presentViewController:alert animated:YES completion:nil];
 		firstTime = false;
-	}
+	/*}
 	else {
 		%orig;
-	}
+	}*/
 }
 %end

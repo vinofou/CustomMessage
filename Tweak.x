@@ -1,6 +1,9 @@
 //import uikit to use it's abilities
 #import <UIKit/UIKit.h>
 
+@interface SpringBoard : UIApplication
+@end
+
 bool firstTime = true;
 
 %hook SpringBoard
